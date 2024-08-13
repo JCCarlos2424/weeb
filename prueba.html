@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=sc, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+ 
+ while(true){
+    var opcion=parseInt(prompt("Ingrese el número de su opción:\n1 - Ingresar información personal \n2-Para ver informacion"))
+    
+        if(opcion==1)
+        
+         var sexo=0;
+        var trabajo=0;
+        var salario=0;
+        var edad=0;
+        sexo = parseInt(prompt("¿Cuál es su sexo?\n1 - Masculino\n2 - Femenino"));
+        while (sexo < 1 || sexo > 2) {
+            sexo = parseInt(prompt("Ingrese\n1 - Masculino\n2 - Femenino"));    
+        }
+         trabajo = parseInt(prompt("¿Posee trabajo?\n1 - Sí\n2 - No"));
+        while (trabajo < 1 || trabajo > 2) {
+            trabajo = parseInt(prompt("Ingrese\n1 - Sí\n2 - No"));
+        }
+        if (trabajo === 1) {
+            sueldo = parseFloat(prompt("¿Cuál es su sueldo?"));
+            while (sueldo <= 600 || sueldo >= 2000) {
+                sueldo = parseFloat(prompt("Ingrese un sueldo entre 600 y 2000: "));
+            }
+        } else {
+            sueldo = 0;
+        }
+        edad = parseInt(prompt("Ingrese su edad: "));
+        while (edad < 18 || edad > 40) {
+            edad = parseInt(prompt("Ingrese una edad válida entre 18 y 40 años: "));
+        }
+ 
+    }
+    </script>
+</body>
+</html>

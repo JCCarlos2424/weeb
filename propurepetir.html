@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla de equivalencias</title>
+</head>
+<body>
+    <body style="background-color: rgb(198, 173, 230);"></body>
+    <h1>tablas de equiva</h1>
+    <script>
+        var cantidad=0;
+        var j=1000;
+
+        cantidad=parseFloat(prompt("ingresa la cantidad de dolares"));
+ while(cantidad<1000 || cantidad>10000)
+
+            {
+                
+                cantidad=parseFloat(prompt("ingresa la cantidad de dolares arriba de 1000"));
+
+
+            }
+
+
+            document.write("----------------------------<br><br>");
+            
+            document.write("dolares---------------BTC-------------ETH<br>");
+            document.write("_________________________<br><br>");
+
+
+            while (j<=cantidad)
+
+            {
+            
+            document.write("$"+j+"---------------"+j/57810+"-------------+"+j/3062);
+            document.write("<br>");
+            document.write("<br>");
+
+            j++;
+
+            }
+            document.write("_____________________________________________________________");
+
+
+    </script>
+    
+</body>
+</html>
